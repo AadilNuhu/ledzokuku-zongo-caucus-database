@@ -82,13 +82,14 @@ nav {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 7px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .nav-list a:hover {
-    background: #333;
-    color: #fff;
-    border-radius: 4px;
+    background: #fff;
+    color: #007BFF;
+    border-radius: 7px;
 }
 
 /* #################### MENU #################### */
@@ -316,8 +317,7 @@ nav {
 
 
   .services {
-    max-width: 1300px;
-    margin: 10px;
+    margin: 40px 80px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -375,7 +375,7 @@ nav {
     margin-right: 10px;
     color: #007BFF;
   }
-   
+  
   /* #################### FOOTER #################### */
   footer{
     background-color: #007BFF;
@@ -629,6 +629,19 @@ nav {
       font-weight: 900;
       margin-right: 10px;
       color: #007BFF;
+    }
+
+    .loader {
+      position: fixed;
+      left: 35%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+      border: 16px solid #f3f3f3; 
+      border-top: 16px solid #3498db;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 1.5s linear infinite;
     }
 
 }
