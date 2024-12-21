@@ -19,3 +19,40 @@ window.addEventListener('load', function() {
         document.body.style.overflow = 'auto';
     }, 3000); // 3 seconds
 });
+
+const textArray = ["Software Engineer","Web Developer", "Machine Learning Engineer"];
+let textIndex = 0;
+let charIndex = 0;
+let currentText = '';
+let isDeleting = false;
+
+function type() {
+    if (textIndex === textArray.length) {
+        textIndex = 0; // Reset to the first text
+    }
+
+    currentText = textArray[textIndex];
+
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+
+    document.getElementById('typing-text').textContent = currentText.substring(0, charIndex);
+
+    if (charIndex === currentText.length) {
+        isDeleting = true;
+    } else if (charIndex === 0) {
+        isDeleting = false;
+        textIndex++;
+    }
+
+    const typingSpeed = isDeleting ? 50 : 150; // Speed of typing and deleting
+    setTimeout(type, typingSpeed);
+}
+
+// Start the typing animation
+document.addEventListener('DOMContentLoaded', () => {
+    type();
+});

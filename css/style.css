@@ -157,8 +157,27 @@ nav {
     background-color: #fff;
   }  
   .hero-content a:hover{
-    color: #007BFF;
+    color: #007BFF; 
   }
+
+  .typing-container {
+    display: inline-block;
+    font-size: 35px;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: white;
+    animation: blink 0.7s infinite;
+}
+
+#typing-text,#name{
+    color: blue;
+    text-shadow: 2px 2px 2px black;
+}
   
   
   /* #################### INTRO SECTION #################### */
@@ -426,13 +445,13 @@ nav {
       background-size: cover;
     }
     .hero-content h1 {
-      font-size: 43px;
+      font-size: 40px;
       margin-bottom: 7px;
       text-shadow: 2px 2px 2px black;
     }
     
     .hero-content p {
-      font-size: 22px;
+      font-size: 21px;
       margin-bottom: 20px;
     }
     

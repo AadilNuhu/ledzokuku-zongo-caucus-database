@@ -56,8 +56,8 @@ nav {
 }
 
 .nav-list a:hover {
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #007BFF;
     border-radius: 4px;
 }
 
@@ -151,6 +151,29 @@ section#about {
 .about-skills h2,.about-experience h2,.about-personal h2{
     color: #007BFF;
     font-size: 2rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background: blue;
+    height: 10px;
+    border-radius: 5px;
 }
 
 .experience-item {
